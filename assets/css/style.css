@@ -11,7 +11,7 @@
 body {
   font-family: "Oswald", sans-serif;
   font-weight: 300;
-  color: #f3f3f3;
+  background-color: #161616;
 }
 
 body a {
@@ -24,14 +24,13 @@ body a {
   text-decoration: none;
   letter-spacing: 2px;
   margin: 20px;
-  padding-top: 5px;
-  font-size: 300%;
+  font-size: 280%;
 }
 
 .navbar {
   list-style-type: none;
   margin: 10px;
-  font-size: 150%;
+  font-size: 180%;
   display: flex;
   flex-direction: row;
 }
@@ -41,11 +40,11 @@ body a {
 }
 
 .navbar a:hover {
-  border-bottom: 2.5px solid #db4a4a;
+  border-bottom: 2.5px solid #6d6d6d;
 }
 
 .active {
-  border-bottom: 2.5px solid #db4a4a;
+  border-bottom: 2.5px solid #6d6d6d;
 }
 
 header {
@@ -55,60 +54,80 @@ header {
 }
 
 /*  home page  */
-.gradient-bg {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .main-body-container {
   background-image: url("../images/main_pizza.webp");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+/* menu page */
+.menu-container {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background-image: url('../images/pizza_ing.webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  height: 100vh;
+}
+
+/* contact page */
+.contact-container {
+  background-image: url("../images/pizza_box.webp");
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
 }
 
 /*  form section  */
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  label {
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  input,
-  textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    font-size: 16px;
-  }
-  
-  button {
-    background-color: #ff6600;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    background-color: #e55c00;
-  }
-  
-  input:focus,
-  textarea:focus {
-    outline: none;
-    border-color: #ff6600;
-    box-shadow: 0 0 5px #ff6600;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-right: 350px;
+}
+
+label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #e55c00;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ff6600;
+  box-shadow: 0 0 5px #ff6600;
+}
+
+
+/* media queries */
