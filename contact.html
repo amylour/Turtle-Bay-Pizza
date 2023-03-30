@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Turtle Bay Pizza is Australia's best pizza - guaranteed! We aim to please with delicious cheese! We don't rush the process that makes our pizzas great, but we are super fast on delivery! Try us today!">
+    <meta name="keywords"
+        content="pizza, cheese, tomato, best pizza, Turtle Bay Australia, family, pizza takeaway, pizza restaurant, hangover cure">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <title>Turtle Bay Pizza - Restaurant & Takeaway</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/pizza_favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html">
+            <h1 class="logo">Turtle Bay Pizza</h1>
+        </a>
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="feedback_form">
+        <div class="container" class="form">
+            <form action="/send-feedback" method="post">
+                <label for="name">Name:</label>
+                <input class="input" type="text" id="name" name="name" required>
+
+                <label for="email" class="label">Email:</label>
+                <input class="input" type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea class="textarea" id="message" name="message" required></textarea>
+
+                <button type="submit" class="button">Send</button>
+            </form>
+
+        </div>
+    </section>
+
+</body>
+
+</html>
