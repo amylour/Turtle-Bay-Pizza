@@ -40,7 +40,7 @@ body a {
 }
 
 .navbar a:hover {
-  border-bottom: 2.5px solid #6d6d6d;
+  border-bottom: 2.5px solid #ff6600;
 }
 
 .active {
@@ -65,14 +65,79 @@ header {
 /* menu page */
 .menu-container {
   font-family: "Source Sans Pro", sans-serif;
-  font-weight: 300;
+  font-weight: 00;
   color: #ffffff;
-  background-image: url('../images/pizza_ing.webp');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  opacity: 0.7;
+  position: relative; 
   height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-container::before {
+  background-image: url('../images/pizza_ing.webp');
+  content: "";
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+.menu-contents {
+  position: relative;
+  text-align: center;
+  flex-direction: row;
+  opacity: 1;
+  color: #fff;
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+  text-decoration-color: #ff6600;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+th {
+  text-align: left;
+  padding: 20px;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #ff6600;
+}
+
+td {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+}
+
+.type {
+  font-weight: bold;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.allergy {
+  margin-top: 25px;
+  color:#fff;
 }
 
 /* contact page */
