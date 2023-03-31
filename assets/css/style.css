@@ -62,6 +62,38 @@ header {
   height: 100vh;
 }
 
+body {
+  overflow: hidden;
+}
+
+.diagonal-rec {
+  width: 0;
+  height: 100vh;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  background-color: #161616;
+  opacity: 0.6;
+  transform-origin: bottom right;
+  transform: skew(-40deg);
+  animation: slide-in 4s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes slide-in {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 85vw;
+  }
+  100% {
+    width: 75vw;
+  }
+}
+
+
 /* menu page */
 .menu-container {
   font-family: "Source Sans Pro", sans-serif;
@@ -162,6 +194,8 @@ form {
 label {
   margin-bottom: 10px;
   font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
 }
 
 input,
@@ -170,7 +204,7 @@ textarea {
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 button {
@@ -180,7 +214,8 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
 }
 
 button:hover {
